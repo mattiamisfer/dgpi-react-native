@@ -1,0 +1,4 @@
+#Wed Apr 20 17:19:54 IST 2022
+base.0=E\:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

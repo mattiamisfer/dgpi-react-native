@@ -1,0 +1,168 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.affinityinteractive.dgpi"
+4    android:versionCode="3"
+5    android:versionName="1.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <!-- Required by older versions of Google Play services to create IID tokens -->
+14    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+14-->[com.google.android.gms:play-services-iid:17.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\61e3e279020c351517b511e7d56d43f0\play-services-iid-17.0.0\AndroidManifest.xml:23:5-82
+14-->[com.google.android.gms:play-services-iid:17.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\61e3e279020c351517b511e7d56d43f0\play-services-iid-17.0.0\AndroidManifest.xml:23:22-79
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\744c11701aa7144a8d6a8e89bcdad6bd\installreferrer-1.1.2\AndroidManifest.xml:9:5-110
+15-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\744c11701aa7144a8d6a8e89bcdad6bd\installreferrer-1.1.2\AndroidManifest.xml:9:22-107
+16
+17    <application
+17-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:6:5-25:19
+18        android:name="com.affinityinteractive.dgpi.MainApplication"
+18-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:7:7-38
+19        android:allowBackup="true"
+19-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:11:7-33
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.1.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\639e914bfc1efa21e36199d3ff2c5eef\core-1.1.0\AndroidManifest.xml:24:18-86
+21        android:icon="@mipmap/ic_launcher"
+21-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:9:7-41
+22        android:label="@string/app_name"
+22-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:8:7-39
+23        android:roundIcon="@mipmap/ic_launcher"
+23-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:10:7-46
+24        android:theme="@style/AppTheme" >
+24-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:12:7-38
+25        <activity
+25-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:13:7-23:18
+26            android:name="com.affinityinteractive.dgpi.MainActivity"
+26-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:14:9-37
+27            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+27-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:16:9-86
+28            android:label="@string/app_name"
+28-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:15:9-41
+29            android:launchMode="singleTask"
+29-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:17:9-40
+30            android:windowSoftInputMode="adjustResize" >
+30-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:18:9-51
+31            <intent-filter>
+31-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:19:9-22:25
+32                <action android:name="android.intent.action.MAIN" />
+32-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:20:13-65
+32-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:20:21-62
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:21:13-73
+34-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:21:23-70
+35            </intent-filter>
+36        </activity>
+37        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+37-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:24:7-84
+37-->E:\react-native\team-motivation-1\team-motivation-1\android\app\src\main\AndroidManifest.xml:24:17-81
+38
+39        <receiver
+39-->[:react-native-device-info] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-device-info\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:9-22:20
+40            android:name="com.learnium.RNDeviceInfo.RNDeviceReceiver"
+40-->[:react-native-device-info] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-device-info\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:13-70
+41            android:enabled="true"
+41-->[:react-native-device-info] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-device-info\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-35
+42            android:exported="true"
+42-->[:react-native-device-info] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-device-info\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-36
+43            android:permission="android.permission.INSTALL_PACKAGES" >
+43-->[:react-native-device-info] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-device-info\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-69
+44            <intent-filter>
+44-->[:react-native-device-info] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-device-info\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:13-21:29
+45                <action android:name="com.android.vending.INSTALL_REFERRER" />
+45-->[:react-native-device-info] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-device-info\android\build\intermediates\library_manifest\release\AndroidManifest.xml:20:17-79
+45-->[:react-native-device-info] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-device-info\android\build\intermediates\library_manifest\release\AndroidManifest.xml:20:25-76
+46            </intent-filter>
+47        </receiver>
+48
+49        <provider
+49-->[:react-native-webview] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:12:9-20:20
+50            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+50-->[:react-native-webview] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:13:13-83
+51            android:authorities="com.affinityinteractive.dgpi.fileprovider"
+51-->[:react-native-webview] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:14:13-64
+52            android:exported="false"
+52-->[:react-native-webview] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:15:13-37
+53            android:grantUriPermissions="true" >
+53-->[:react-native-webview] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:16:13-47
+54            <meta-data
+54-->[:react-native-webview] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:17:13-19:63
+55                android:name="android.support.FILE_PROVIDER_PATHS"
+55-->[:react-native-webview] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:18:17-67
+56                android:resource="@xml/file_provider_paths" />
+56-->[:react-native-webview] E:\react-native\team-motivation-1\team-motivation-1\node_modules\react-native-webview\android\build\intermediates\library_manifest\release\AndroidManifest.xml:19:17-60
+57        </provider>
+58
+59        <activity
+59-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:23:9-27:75
+60            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+60-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:24:13-93
+61            android:excludeFromRecents="true"
+61-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:25:13-46
+62            android:exported="false"
+62-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:26:13-37
+63            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+63-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:27:13-72
+64        <!--
+65            Service handling Google Sign-In user revocation. For apps that do not integrate with
+66            Google Sign-In, this service will never be started.
+67        -->
+68        <service
+68-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:33:9-37:51
+69            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+69-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:34:13-89
+70            android:exported="true"
+70-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:35:13-36
+71            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+71-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:36:13-107
+72            android:visibleToInstantApps="true" />
+72-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\34a1dde92c9e0842a0f104e1114883f4\play-services-auth-19.0.0\AndroidManifest.xml:37:13-48
+73
+74        <activity
+74-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\0b6249500b8009a9eb57f214c32dfafc\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+75            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+75-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\0b6249500b8009a9eb57f214c32dfafc\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+76            android:exported="false"
+76-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\0b6249500b8009a9eb57f214c32dfafc\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+77            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+77-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\0b6249500b8009a9eb57f214c32dfafc\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+78
+79        <provider
+79-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:26:9-31:39
+80            android:name="com.google.firebase.provider.FirebaseInitProvider"
+80-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:27:13-77
+81            android:authorities="com.affinityinteractive.dgpi.firebaseinitprovider"
+81-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:28:13-72
+82            android:directBootAware="true"
+82-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:29:13-43
+83            android:exported="false"
+83-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:30:13-37
+84            android:initOrder="100" />
+84-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:31:13-36
+85
+86        <service
+86-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:33:9-37:35
+87            android:name="com.google.firebase.components.ComponentDiscoveryService"
+87-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:34:13-84
+88            android:directBootAware="true"
+88-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:35:13-43
+89            android:exported="false" />
+89-->[com.google.firebase:firebase-common:19.4.0] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\38cc66f6b323225e104d758c335a5aa9\jetified-firebase-common-19.4.0\AndroidManifest.xml:36:13-37
+90
+91        <meta-data
+91-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\21685b34934362e8a62fc8fe63919d73\jetified-play-services-basement-17.1.1\AndroidManifest.xml:23:9-25:69
+92            android:name="com.google.android.gms.version"
+92-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\21685b34934362e8a62fc8fe63919d73\jetified-play-services-basement-17.1.1\AndroidManifest.xml:24:13-58
+93            android:value="@integer/google_play_services_version" />
+93-->[com.google.android.gms:play-services-basement:17.1.1] C:\Users\affity\.gradle\caches\transforms-2\files-2.1\21685b34934362e8a62fc8fe63919d73\jetified-play-services-basement-17.1.1\AndroidManifest.xml:25:13-66
+94    </application>
+95
+96</manifest>

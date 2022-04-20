@@ -1,0 +1,10 @@
+#Wed Apr 20 17:09:04 IST 2022
+base.2=E\:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
+path.2=classes3.dex
+base.1=E\:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
+path.1=classes2.dex
+base.0=E\:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -386,8 +386,8 @@ const  renderPagination = (index, total, context) => {
         const list = [
             {
                 type:  this.state.topics,
-                name: 'TM Question Bank',
-                avatar_url: 'http://35.153.195.92/appmotivenew/bank.png',
+                name: 'DGPI Test Series',
+                avatar_url: 'http://35.153.195.92/backend/icons/questionbank.png',
                 subtitle: 'Vice President',
                 icon: 'av-timer',
                 path:'TopicList',
@@ -399,8 +399,8 @@ const  renderPagination = (index, total, context) => {
 
             {
                 type:   this.state.latest,
-                name: 'TM Test Series (Latest) ' ,
-                avatar_url: 'http://35.153.195.92/appmotivenew/bank.png',
+                name: 'DGPI Q Bank' ,
+                avatar_url: 'http://35.153.195.92/backend/icons/testseries.png',
                 subtitle: 'Vice President',
                 icon: 'av-timer',
                 path:'BonusScreen',
@@ -409,23 +409,23 @@ const  renderPagination = (index, total, context) => {
                     locationID:this.state.locationID
                 }
             },
-            // {
-            //     type: this.state.video,
-            //     name: 'TM Image & Video',
-            //     avatar_url: 'http://35.153.195.92/appmotivenew/mouse.png',
-            //     subtitle: 'Vice President',
-            //     icon: 'md-arrow-forward',
-            //     path:'VideoTopic',
-            //     param: {
-            //         userID:this.state.userID,
-            //         locationID:this.state.locationID
-            //     }
-            // },
+            {
+                type: this.state.video,
+                name: 'TM Image & Video',
+                avatar_url: 'http://35.153.195.92/appmotivenew/mouse.png',
+                subtitle: 'Vice President',
+                icon: 'md-arrow-forward',
+                path:'VideoTopic',
+                param: {
+                    userID:this.state.userID,
+                    locationID:this.state.locationID
+                }
+            },
 
             {
                 type: this.state.material,
-                name: 'TM Study Material',
-                avatar_url: 'http://35.153.195.92/appmotivenew/study.png',
+                name: 'DGPI E Notes',
+                avatar_url: 'http://35.153.195.92/backend/icons/enotes.png',
                 subtitle: 'Vice President',
                 icon: 'arrow-forward-ios',
                 path:'MaterialScreen',
@@ -452,9 +452,9 @@ const  renderPagination = (index, total, context) => {
     <Text>Logouts...</Text>
            </TouchableOpacity> */}
 
-                    <View style={{alignItems:'center',marginVertical:'2%'}}>
+                    {/* <View style={{alignItems:'center',marginVertical:'2%'}}>
                         <Text style={{color:Palette.textColor,fontSize:18}}>Welcome ! </Text>
-                    </View>
+                    </View> */}
 
                     <View style={styles.container}>
 
@@ -466,6 +466,13 @@ const  renderPagination = (index, total, context) => {
 
                         />
 
+                    </View>
+
+                    <View style={{flexDirection:'row',width:'90%',marginVertical:5}}>
+                        <Text style={{flex:1}}>FMGE</Text>
+                        <Text style={{flex:1}}>NEET PG</Text>
+                        <Text style={{flex:1}}>NEXT</Text>
+                        <Text style={{flex:1}}>CROCK</Text>
                     </View>
 
                     <View style={{ width:'90%',flex:1,marginBottom:2}}>
@@ -535,7 +542,10 @@ const  renderPagination = (index, total, context) => {
         </MarqueeText> */}
 
                         <Text>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        DPGI Is group of young and dynamic professionals who are driven by the zeal of making it big. As Lead by Young Leader so Its Obvious that DPGI is driven by right mix of technology and innovation which is necessary for an institution who imparts coaching to FMGE / NEXT / NEETPG.
+Our Coaching Ecosystem is perfectly balance by Best of the Best Faculties, versatile support staff, state of the art infrastructure and able leadership, results in exemplary outcome for aspiring doctors.
+In our successful journey so far, we have helped more than 5,000 doctors in passing FMGE with Good Results.
+
 
 
                          </Text>
@@ -617,21 +627,22 @@ const styles = StyleSheet.create({
     proimage: {
         height: 80,
         width: 80,
-        borderRadius: 40,
+       // borderRadius: 40,
     },
     proimagecontainer :{
 marginTop:10,
         marginLeft: 10,
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 40,
+borderRadius: 40,
         flex:1
     },
     textone: {
         fontSize:12
     },
     textdesc: {
-        fontSize:10
+        fontSize:10,
+        color:'red', fontWeight:'bold'
     },
     drownerButton: {
         height: 50,

@@ -39,7 +39,7 @@ class VideoTopic extends React.Component {
     })
       .then((response) => response.json())
       .then((responseJson) => {
-       console.log(responseJson)
+       console.log('MY LIST' +responseJson)
        this.setState({
         isLoading: false,
         dataSource: responseJson

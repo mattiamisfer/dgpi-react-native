@@ -221,6 +221,8 @@ testID:testID
 
 submitLastTest= (questNumber) => {
 
+ // alert(questNumber)
+
  // this.setPopUpVisible(!this.state.popup);
   return fetch('http://35.153.195.92/appmotivenew/test-submittest.php', {
     method: "POST",
@@ -481,6 +483,9 @@ const instructions = responseJson.instruction
   const jdata =responseJson.quiz.quiz1
   const title = responseJson.title
   const totalQ = responseJson.totalQuestion
+
+
+  console.log('question list'+ jdata);
   arrnew = Object.keys(jdata).map( function(k) { return jdata[k] })
 
 //  console.log( 'Current' + arrnew[this.qno].question)
@@ -591,14 +596,14 @@ arrnews = Object.keys(jdataanswer).map( function(k) { return jdataanswer[k] })
 
 //  console.log( 'Current' + arrnew[this.qno].question)
    this.setState({
-    answerPalete: responseJson.checkData
+    answerPalete: responseJson.checkData,
 //     times:  '1000',
 //     question : arrnew[this.qno].question,
 //     options : arrnew[this.qno].options,
 //  correctoption : arrnew[this.qno].correctoption,
 //     countCheck : 0,
 //     numberVal:arrnew[this.qno].numberID,
-//     questionList :arrnew,
+    questionList :arrnew,
 //     lastQues : JSON.stringify(responseJson.lastQuestion),
 //     quesNo: arrnew[this.qno].questionNumber,
 //     testID:testID,
@@ -700,7 +705,8 @@ qno:fruit_name
           this.animatedValue,
           {
             toValue: 1,
-            duration: 250
+            duration: 250,
+//useNativeDriver: true,
           }
         ).start(() => {
           this.setState({ disabled: false });
@@ -857,7 +863,7 @@ qno:fruit_name
 
    }
 
-   submitLast(){
+   submitLast(questNumber){
 
 
 
@@ -876,7 +882,7 @@ qno:fruit_name
        this.setState ({
  qimage:arrnew[this.qno].qimage,
            btn:arrnew[this.qno].btn,
-         quest_id:arrnew[this.qno].quest_id,
+         quest_id:questNumber,
          quesNo:arrnew[this.qno].questionNumber,  numberVal:arrnew[this.qno].numberID,countCheck: 0, question: arrnew[this.qno].question, options: arrnew[this.qno].options,
           correctoption : arrnew[this.qno].correctoption,
           quesMark:arrnew[this.qno].quesMark,
@@ -1168,7 +1174,7 @@ qimage:arrnew[this.qno].qimage,
 
   keyExtractor = (item, index) => index.toString();
   renderItem = ({ item,index }) => (
-    <View>
+    <View key={index}>
     <TouchableOpacity
 //  onPress={this.GetFlatListItem.bind(this, JSON.stringify(index))}
 
@@ -1206,7 +1212,7 @@ style={[styles.text,item.answercheck =='red' ? { color:'white'} : item.answerche
 
 >
    {index + 1}
-
+   {/* {item.answercheck =='red' ? 'red' : 'green' }  */}
 
 
  </Text>
@@ -1613,10 +1619,12 @@ questionN,
  //  onPress={() => this.next()}
 
  onPress={() => this.submitLast(this.state.quesNo)}
-
+//  onPress={() => {
+//   this.setPopUpVisible(true,this.state.userID,this.state.testID);
+// }}
   >
     <LinearGradient  colors={['#ffa726', '#fb8c00']}  start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={{paddingTop: 5,paddingBottom: 5, paddingRight: 20, paddingLeft: 20, borderRadius:10, backgroundColor:"green"}}>
-    <Text style={{ paddingVertical:5,color:'white'}}>Submit</Text>
+    <Text style={{ paddingVertical:5,color:'white'}}>Submit...</Text>
     </LinearGradient>
   </TouchableOpacity >
 :
@@ -1965,7 +1973,7 @@ Alert.alert('Modal has been closed.');
         <View style={{padding:5}}>
         <TouchableOpacity style={styles.touchBtn}
     onPress={() => this.submitTest(this.state.quesNo) }>
-    <Text style={{color:'#efefef'}}>Submit  </Text>
+    <Text style={{color:'#efefef'}}>Submit</Text>
   </TouchableOpacity>
         </View>
       </View>
@@ -2073,7 +2081,8 @@ const styles = StyleSheet.create(
       width: DRAWER_WIDTH,
       flexDirection: 'row',
       marginVertical: 20,
-      marginHorizontal: 20,
+      marginHorizontal:20,
+     // backgroundColor:'red'
 
 
     },

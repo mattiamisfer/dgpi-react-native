@@ -184,6 +184,10 @@
         "source": "C:\\Users\\affity\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
+        "merged": "E:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativeafvideoplayer_node_modules_reactnativevectoricons_glyphmaps_materialicons.json.flat",
+        "source": "E:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\generated\\res\\react\\release\\raw\\node_modules_reactnativeafvideoplayer_node_modules_reactnativevectoricons_glyphmaps_materialicons.json"
+    },
+    {
         "merged": "E:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\intermediates\\res\\merged\\release\\color_abc_hint_foreground_material_light.xml.flat",
         "source": "C:\\Users\\affity\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\color\\abc_hint_foreground_material_light.xml"
     },
@@ -1358,10 +1362,6 @@
     {
         "merged": "E:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\affity\\.gradle\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "E:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativeafvideoplayerupdated_node_modules_reactnativevectoricons_glyphmaps_materialicons.json.flat",
-        "source": "E:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\generated\\res\\react\\release\\raw\\node_modules_reactnativeafvideoplayerupdated_node_modules_reactnativevectoricons_glyphmaps_materialicons.json"
     },
     {
         "merged": "E:\\react-native\\team-motivation-1\\team-motivation-1\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_round.png.flat",

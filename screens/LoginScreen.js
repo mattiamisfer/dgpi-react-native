@@ -215,7 +215,7 @@ class LoginScreen extends Component {
         const { userPassword }  = this.state ;
 
 
-       // Alert.alert(userEmail + userPassword);
+//Alert.alert(userEmail + userPassword);
 
   return     fetch('http://35.153.195.92/appmotivenew/ac-login.php', {
          method: 'POST',
@@ -368,18 +368,18 @@ secureTextEntry={this.state.password}
   keyboardType={"numeric"}
 />
  </View>
-
- <LinearGradient style={styles.userInputlogin} colors={['#EAF1FC', '#111111']}  start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} >
+ <TouchableOpacity style={styles.userInputlogin} onPress={this.UserLoginFunction}>
+ <LinearGradient style={styles.loginBtn} colors={['#EAF1FC', '#111111']}  start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} >
    
    
-   <TouchableOpacity style={styles.loginBtn} onPress={this.UserLoginFunction}>
+  
    <Text style={styles.loginText}>Login</Text>
     {/* <Button      title="Login "
          color={Palette.trans}
          onPress={this.UserLoginFunction}/> */}
-  </TouchableOpacity> 
-</LinearGradient>
 
+</LinearGradient>
+</TouchableOpacity> 
  
 
  <View style={{  flexDirection:'column',alignContent:'center',marginVertical:10}}>
@@ -511,7 +511,9 @@ loginBtn : {
   textAlign:'center',
   justifyContent:'center',
   alignItems:'center',
-  color:Palette.white
+  color:Palette.white,
+  paddingVertical:5,
+  borderRadius:5
 },
 loginText : {
   color:Palette.white,

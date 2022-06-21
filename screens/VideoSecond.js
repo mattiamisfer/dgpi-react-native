@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet,View,Text,Image,TouchableOpacity, Alert,Linking} from 'react-native';
 import Logo from '../components/MinLogo';
 import Icon from 'react-native-vector-icons/Ionicons';
-import Video, { ScrollView, Container } from 'react-native-af-video-player-updated'
+import Video, { ScrollView, Container } from 'react-native-af-video-player'
 import Orientation from 'react-native-orientation';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 

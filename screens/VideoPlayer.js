@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyleSheet,View,Text,Image,TouchableOpacity, Alert,Linking,Button} from 'react-native';
+import {StyleSheet,View,Text,Image,TouchableOpacity, Alert,Linking,Button,ActivityIndicator} from 'react-native';
 import Logo from '../components/MinLogo';
 import Icon from 'react-native-vector-icons/Ionicons';
-import Video, { ScrollView, Container } from 'react-native-af-video-player-updated'
+import Video, { ScrollView, Container } from 'react-native-af-video-player'
  import Orientation from 'react-native-orientation';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -96,7 +96,7 @@ class VideoPlayer extends React.Component {
       })
         .then((response) => response.json())
         .then((responseJson) => {
-       //  console.log('My Data' + responseJson)
+       console.log('My Data Path' + responseJson.path)
          this.setState({
 
             videoPath: responseJson.path,
@@ -207,7 +207,7 @@ times = (num) => {
         })
             .then((response) => response.json())
             .then((responseJson) => {
-                //  console.log('My Data' + responseJson)
+             
 
              //   Alert.alert(responseJson.success+ 'sssssss');
 
@@ -386,7 +386,9 @@ times = (num) => {
        const { navigate } = this.props.navigation;
      return (
         <View style={styles.screen}>
-          { this.state.positions ==='PORTRAIT' ?
+          {this.state.videoPath == '' ? <ActivityIndicator/> :
+          <> 
+                    { this.state.positions ==='PORTRAIT' ?
 
           <View style={{justifyContent:'space-between',alignContent:'center',alignItems:'center',flexDirection:'row',width:'90%',paddingHorizontal:5}}>
           <View style={{flex:1,justifyContent: "center",alignItems: "center"}}>
@@ -529,7 +531,8 @@ times = (num) => {
 
 
                 </View></ScrollView>
-
+                </> 
+   }
         </View>
    );
    }

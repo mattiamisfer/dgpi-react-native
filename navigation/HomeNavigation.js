@@ -400,21 +400,7 @@ const HomeNavigation = createStackNavigator(
 const TabNavigation = createBottomTabNavigator(
   {
     // Login:LoginScreen,
-    Home: {
-      screen: HomeNavigation,
-      navigationOptions: {
-        tabBarIcon: (tabInfo) => {
-          return (
-            <Icon
-              name="home"
-              type="antdesign"
-              color={Colors.primaryColor}
-              size={25}
-            />
-          );
-        },
-      },
-    },
+    
 
     // Profile: {
     //     screen:ProfileScreen,
@@ -450,16 +436,33 @@ const TabNavigation = createBottomTabNavigator(
     Result: {
       screen: _ResultScreen,
       navigationOptions: {
-        tabBarLabel: 'Results..',
-        tabBarIcon: (tabInfo) => {
+       tabBarLabel:() => {return null},
+    // tabBarLabel:'Result Section',
+
+        tabBarIcon: ({focused,tintColor,color}) => {
           return (
-            <Icon
-              name="assignment"
-              type="MaterialIcons
-"
-              color={Colors.primaryColor}
-              size={25}
-            />
+//             <Icon
+//               name="assignment"
+//               type="MaterialIcons
+// "
+//               color={Colors.primaryColor}
+//               size={25}
+//             />
+<View style={{
+         // position: 'absolute',
+          bottom: 0, // space from bottombar
+          height: 58,
+          width: 58,
+          backgroundColor:tintColor,
+         // borderRadius: 58,
+         // backgroundColor: '#5a95ff',
+          justifyContent: 'center',
+          alignItems: 'center',
+          alignContent:'center'
+        }}>
+<Text style={[{color:focused ? 'white' : 'black' },{fontSize:12}]}>Result </Text>
+         <Text style={[{color:focused ? 'white' : 'black' },{fontSize:12}]}>Section</Text>
+</View>
           );
         },
       },
@@ -467,15 +470,58 @@ const TabNavigation = createBottomTabNavigator(
     Doubt: {
       screen: Doubts,
       navigationOptions: {
-        tabBarLabel: 'Doubt',
-        tabBarIcon: (tabInfo) => {
+        tabBarLabel:() => {return null},
+
+        tabBarIcon: ({tintColor,focused}) => {
           return (
-            <Icon
-              name="question-circle"
-              type="font-awesome"
-              color={Colors.primaryColor}
-              size={25}
-            />
+            <View style={{
+              // position: 'absolute',
+               bottom: 0, // space from bottombar
+               height: 58,
+               width: 58,
+               backgroundColor:tintColor,
+              // borderRadius: 58,
+              // backgroundColor: '#5a95ff',
+              
+               justifyContent: 'center',
+               alignItems: 'center',
+               alignContent:'center'
+             }}>
+     <Text style={[{color:focused ? 'white' : 'black' },{fontSize:12}]}>Doubt</Text>
+              <Text  style={[{color:focused ? 'white' : 'black' },{fontSize:12}]} >Section</Text>
+     </View>
+          );
+        },
+      },
+    },
+
+    Home: {
+      screen: HomeNavigation,
+      
+      navigationOptions: {
+        tabBarLabel:() => {return null},
+
+        tabBarIcon: ({tintColor,focused}) => {
+          return (
+            <View
+        style={{
+          position: 'absolute',
+          bottom: 0, // space from bottombar
+          height: 58,
+          width: 58,
+          borderRadius: 58,
+          backgroundColor: '#c2185b',
+          justifyContent: 'center',
+          alignItems: 'center',
+          alignContent:'center'
+        }}>
+         <View style={{ justifyContent: 'center',
+          alignItems: 'center',
+          alignContent:'center'}}>
+         <Text style={{color:"white",fontSize:12,fontWeight:'bold'}}>DGPI</Text>
+         <Text style={{color:'white',fontSize:12,fontWeight:'bold'}}>Home</Text>
+         </View>
+      </View>
           );
         },
       },
@@ -484,15 +530,25 @@ const TabNavigation = createBottomTabNavigator(
     Notification: {
       screen: _notification,
       navigationOptions: {
-        tabBarLabel: 'Notifications',
-        tabBarIcon: (tabInfo) => {
+        tabBarLabel:() => {return null},
+
+        tabBarIcon: ({tintColor,focused}) => {
           return (
-            <Icon
-              name="bell"
-              type="font-awesome"
-              color={Colors.primaryColor}
-              size={25}
-            />
+            <View style={{
+              // position: 'absolute',
+               bottom: 0, // space from bottombar
+               height: 58,
+               width: 70,
+              // borderRadius: 58,
+              // backgroundColor: '#5a95ff',
+              backgroundColor:tintColor,
+               justifyContent: 'center',
+               alignItems: 'center',
+               alignContent:'center'
+             }}>
+     <Text style={[{color:focused ? 'white' : 'black' },{fontSize:12}]}>Notifications</Text>
+              <Text style={[{color:focused ? 'white' : 'black' },{fontSize:12}]}>Section</Text>
+     </View>
           );
         },
       },
@@ -500,15 +556,25 @@ const TabNavigation = createBottomTabNavigator(
     Settings: {
       screen: _Profile,
       navigationOptions: {
-        tabBarLabel: 'Profile',
-        tabBarIcon: (tabInfo) => {
+        tabBarLabel:() => {return null},
+
+        tabBarIcon: ({tintColor,focused}) => {
           return (
-            <Icon
-              name="settings"
-              type="fMaterialIcons"
-              color={Colors.primaryColor}
-              size={35}
-            />
+            <View style={{
+              // position: 'absolute',
+               bottom: 0, // space from bottombar
+               height: 58,
+               width: 58,
+               backgroundColor:tintColor,
+              // borderRadius: 58,
+              // backgroundColor: '#5a95ff',
+               justifyContent: 'center',
+               alignItems: 'center',
+               alignContent:'center'
+             }}>
+     <Text style={[{color:focused ? 'white' : 'black' },{fontSize:12}]}>Profile</Text>
+              <Text style={[{color:focused ? 'white' : 'black' },{fontSize:12}]}>Section</Text>
+     </View>
           );
         },
       },
@@ -526,12 +592,13 @@ const TabNavigation = createBottomTabNavigator(
     },
     
     tabBarOptions: {
-      activeTintColor:'#2E3E5E',
-      activeBackgroundColor: 'blue',
-      backgroundColor:'black',
-      tabStyle : {
-        backgroundColor:'#E1EBFB'
-      }
+      activeTintColor: '#c2185b',
+      inactiveTintColor: null,
+      showIcon: true,
+      showLabel: false,
+      style: {
+        backgroundColor: '#f1f6f9',
+      },
     },
     style: {
       fontFamily: 'Raleway-MediumItalic',

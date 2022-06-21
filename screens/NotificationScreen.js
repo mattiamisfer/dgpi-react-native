@@ -274,21 +274,7 @@ export default class NotifcationScreen extends Component {
         return {
 
          headerTitle: (props) => <Logo />,
-         headerLeft: () => (
-          <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}
-                
-          >
-              
-              <Icon
-
-name='arrow-back-ios'
-type='MaterialIcons'
-color='#697796'
-size={30}
-
-/> 
-          </TouchableOpacity>
-         ),
+         headerLeft: () => null,
          headerRight: () => (
           <TouchableOpacity style={styles.drownerButton} onPress={navigation.getParam('logout')} > 
           <Icon

@@ -186,7 +186,7 @@ return(
 
 
         return (
-       <View style={{ backgroundColor:'#3f23cf',paddingVertical:50,flex:1,flexDirection:'column'}}>
+       <View style={{ backgroundColor:Palette.primaryBG,paddingVertical:50,flex:1,flexDirection:'column'}}>
       <View style={{flex:1,flexDirection:'row',paddingHorizontal:10,alignContent:'space-between',justifyContent:'center'}}>
       {
     data.map((l, i) => (

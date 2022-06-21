@@ -2502,6 +2502,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\affity\\.gradle\\caches\\transforms-2\\files-2.1\\d157d579d56048b638a46318ba2b4387\\jetified-android-scalablevideoview-1.0.4\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "1028",
+                        "endOffsets": "1079"
+                    },
+                    "to": {
+                        "startLines": "7383",
+                        "startColumns": "4",
+                        "startOffsets": "456130",
+                        "endColumns": "1028",
+                        "endOffsets": "457154"
+                    }
+                },
+                {
                     "source": "C:\\Users\\affity\\.gradle\\caches\\transforms-2\\files-2.1\\7ce8a2eb9e81825ec9bcc373c597a746\\cardview-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,35,36,37,38,45,47,50,7",

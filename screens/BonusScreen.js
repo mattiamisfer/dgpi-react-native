@@ -432,6 +432,22 @@ const styles = StyleSheet.create({
         marginLeft:10
       
       },
+      block1 : {
+        flex:1,
+          flexDirection:'column',
+      
+          marginTop:5,
+          backgroundColor:'white',
+          paddingVertical:10,
+          justifyContent: 'center',
+          paddingHorizontal:3,
+      
+      
+        },
+        block2: {
+          marginTop:5,padding:5,
+      
+        },
 });
 
 //Dummy content to show

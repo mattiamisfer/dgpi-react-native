@@ -85,13 +85,16 @@ export default class SubmitData extends React.Component {
         //alert('logout');
         this.props.navigation.navigate('_signOut');
       }
+      main = () => {
+          this.props.navigation.navigate('HomeScreen');
+      }
       static navigationOptions = ({ navigation })  => {
 
         return {
   
          headerTitle: (props) => <Logo />,
          headerLeft: () => (
-          <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}
+          <TouchableOpacity style={styles.backButton} onPress={() => navigation.navigate('HomeScreen')}
                 
           >
               
@@ -156,7 +159,7 @@ export default class SubmitData extends React.Component {
     }
     render() {
         return (
-            <View style={{width:'100%', flex:1,flexDirection:'column', alignContent:'center',alignItems:'center',backgroundColor:'#555dff'}}>
+            <View style={{width:'100%', flex:1,flexDirection:'column', alignContent:'center',alignItems:'center',backgroundColor:Palette.primaryBG}}>
 
 
                 <View style={{width:'60%',paddingTop:10,alignContent:'center',alignItems:'center'}}>
@@ -164,7 +167,7 @@ export default class SubmitData extends React.Component {
                     <Image source={require('../assets/src/success.png')} style={{width: 100, height:100}} />
 
 
-                    <Text style={{fontSize:12,color:'white'}}>Test Was Submitted Successfully!</Text>
+                    <Text style={{fontSize:12,color:'black'}}>Test Was Submitted Successfully!</Text>
                 </View>
 
 

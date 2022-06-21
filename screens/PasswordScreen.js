@@ -80,21 +80,7 @@ class PasswordScreen extends Component {
         return {
     
           headerTitle: (props) => <Logo />,
-          headerLeft: () => (
-           <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}
-                 
-           >
-               
-               <Icon
-    
-    name='arrow-back-ios'
-    type='MaterialIcons'
-    color='#697796'
-    size={30}
-    
-    /> 
-           </TouchableOpacity>
-          ),
+          headerLeft: () => null,
            
            headerStyle: {
            backgroundColor:Palette.primaryBG}
